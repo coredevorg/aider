@@ -304,6 +304,12 @@ def get_parser(default_config_files, git_root):
         default=2,
         help="Multiplier for map tokens when no files are specified (default: 2)",
     )
+    group.add_argument(
+        "--map-root",
+        metavar="MAP_ROOT",
+        default=".",
+        help="Root directory for the repository map (default: current directory)",
+    )
 
     ##########
     group = parser.add_argument_group("History Files")
