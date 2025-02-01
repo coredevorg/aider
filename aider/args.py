@@ -303,12 +303,15 @@ def get_parser(default_config_files, git_root):
         type=float,
         default=2,
         help="Multiplier for map tokens when no files are specified (default: 2)",
-    )
+    ) 
     group.add_argument(
-        "--map-root",
-        metavar="MAP_ROOT",
+        "--map-cache-dir",
+        metavar="MAP_CACHE_DIR",
         default=".",
-        help="Root directory for the repository map (default: current directory)",
+        help=(
+            "Root directory for the repository map cache .aider.tags.cache.v3"
+            " (default: current directory)"
+        ),
     )
 
     ##########
