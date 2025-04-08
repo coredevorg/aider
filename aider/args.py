@@ -522,7 +522,16 @@ def get_parser(default_config_files, git_root):
         help="Run tests, fix problems found and then exit",
         default=False,
     )
-
+    group.add_argument(
+        "--map-root",
+        metavar="MAP_ROOT",
+        default=".",
+        help=(
+            "Root directory for the repository map cache .aider.tags.cache.v3"
+            " (default: current directory)"
+        ),
+    )
+    
     ##########
     group = parser.add_argument_group("Analytics")
     group.add_argument(
