@@ -1,4 +1,3 @@
-
 [project]
 name = "aider-chat"
 description = "Aider is AI pair programming in your terminal"
@@ -50,3 +49,7 @@ write_to = "aider/_version.py"
 [tool.codespell]
 skip = "*.svg,Gemfile.lock,tests/fixtures/*,aider/website/assets/*"
 write-changes = true
+
+rich = ">=13.7.0"
+puremagic = ">=0.3.0"
+shtab = ">=1.7.1"
